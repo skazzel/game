@@ -1,8 +1,10 @@
-# Závìreènı projekt - arkádová 2D støíleèka
+# Zï¿½vï¿½reï¿½nï¿½ projekt - arkï¿½dovï¿½ 2D stï¿½ï¿½leï¿½ka
 
-Jedná se o spoleènı projekt. Autoøi projektu jsou:
-- Petr Èervinka, p_cervinka
-- Filip Václavík, f_vaclavik
+Jednï¿½ se o spoleï¿½nï¿½ projekt. Autoï¿½i projektu jsou:
+- Petr ï¿½ervinka, p_cervinka
+- Filip Vï¿½clavï¿½k, f_vaclavik
+
+InspiracÃ­ pro tuto hru byli jednoduchÃ© arkÃ¡dovÃ© 2D stÅ™Ã­leÄky, dostupnÃ© pÅ™es prohlÃ­Å¾eÄ
 
 
 
