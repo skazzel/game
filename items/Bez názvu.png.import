@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uv6pa78emlae"
-path="res://.godot/imported/istockphoto-922427730-612x612.jpg-f8f8a192f353ff79a8564b50199539bb.ctex"
+uid="uid://bwe3yvdynhise"
+path="res://.godot/imported/Bez názvu.png-5401edf29da855ebd18893dba65fa371.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background/istockphoto-922427730-612x612.jpg"
-dest_files=["res://.godot/imported/istockphoto-922427730-612x612.jpg-f8f8a192f353ff79a8564b50199539bb.ctex"]
+source_file="res://items/Bez názvu.png"
+dest_files=["res://.godot/imported/Bez názvu.png-5401edf29da855ebd18893dba65fa371.ctex"]
 
 [params]
 

@@ -3,12 +3,14 @@ extends CharacterBody2D
 var player
 var scene
 var mob
+var items
 var health = 3
 
 func _ready():
 	scene = get_node("/root/game")
 	player = get_node("/root/game/player")
 	mob = get_node("/root/game/mob")
+	items = get_node("/root/game/items")
 	%Slime.play_walk()
 
 func _physics_process(delta):
@@ -20,7 +22,7 @@ func drop_item():
 	var item = preload("res://item.tscn").instantiate()
 	item.position = position
 	item.item_type = randi_range(0, 1)
-	scene.add_child(item)
+	items.add_child(item)
 	item.add_to_group("items")
 
 func take_damage():

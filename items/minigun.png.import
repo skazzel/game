@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gl4ghwc746lr"
-path="res://.godot/imported/background-of-green-grass-field-cartoon-drawing-free-vector.jpg-dd4e9c38c656d26b7ce3a77a359ec2c6.ctex"
+uid="uid://dj7od88jbpk8a"
+path="res://.godot/imported/minigun.png-ef71f97c4c44002efbcd496de81d4bc2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background/background-of-green-grass-field-cartoon-drawing-free-vector.jpg"
-dest_files=["res://.godot/imported/background-of-green-grass-field-cartoon-drawing-free-vector.jpg-dd4e9c38c656d26b7ce3a77a359ec2c6.ctex"]
+source_file="res://items/minigun.png"
+dest_files=["res://.godot/imported/minigun.png-ef71f97c4c44002efbcd496de81d4bc2.ctex"]
 
 [params]
 

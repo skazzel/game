@@ -46,9 +46,7 @@ func shoot():
 
 func _on_visibility_changed():
 	if self.visible == true:
-		print("visible")
 		label.text = str("10/10")
 		process_mode = Node.PROCESS_MODE_INHERIT
 	else:
-		print("NOT")
 		process_mode = Node.PROCESS_MODE_DISABLED

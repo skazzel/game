@@ -416,7 +416,7 @@ theme_override_fonts/font = SubResource("FontFile_btyxx")
 theme_override_font_sizes/font_size = 33
 
 [node name="InBetweenTimer" type="Timer" parent="."]
-wait_time = 1.681
+wait_time = 10.0
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 20
@@ -600,12 +600,6 @@ position = Vector2(904, 501)
 
 [node name="tree2" parent="Node" instance=ExtResource("2_6ewai")]
 position = Vector2(195, 113)
-
-[node name="mobs" type="Node" parent="."]
-unique_name_in_owner = true
-
-[node name="items" type="Node" parent="."]
-unique_name_in_owner = true
 
 [connection signal="heathDepleted" from="player" to="." method="_on_player_heath_depleted"]
 [connection signal="visibility_changed" from="player/shotgun" to="." method="_on_shotgun_visibility_changed"]

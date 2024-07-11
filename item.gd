@@ -4,8 +4,8 @@ var item_type : int
 var player_pistol
 var player_shotgun
 var player_fast_gun
-var shotgun = preload("res://shotgun/wYVuao.png")
-var fast_gun = preload("res://fast_gun/wLTza5.png")
+var shotgun = preload("res://items/Bez názvu.png")
+var fast_gun = preload("res://items/minigun.png")
 var textures = [shotgun, fast_gun]
 
 func _ready():

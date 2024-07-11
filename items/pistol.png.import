@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch5e0v2ri1v84"
-path="res://.godot/imported/penwinmedia230400082.jpg-1f12912b643916e00f7e5d7cc934166c.ctex"
+uid="uid://c8bvwb321pvei"
+path="res://.godot/imported/pistol.png-d96dc6786f72f572a0d6934222c99fad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background/penwinmedia230400082.jpg"
-dest_files=["res://.godot/imported/penwinmedia230400082.jpg-1f12912b643916e00f7e5d7cc934166c.ctex"]
+source_file="res://items/pistol.png"
+dest_files=["res://.godot/imported/pistol.png-d96dc6786f72f572a0d6934222c99fad.ctex"]
 
 [params]
 
