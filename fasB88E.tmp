@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://13sws2kwc8s5"]
+
+[ext_resource type="Texture2D" uid="uid://pwwvc0ptdyvc" path="res://fast_gun/wLTza5.png" id="2_1o2ub"]
+[ext_resource type="Script" path="res://fast_gun.gd" id="3_8sbyu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1nlbd"]
+radius = 449.001
+
+[node name="fast_gun" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("3_8sbyu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1nlbd")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+
+[node name="Pistol" type="Sprite2D" parent="Marker2D"]
+position = Vector2(49, 1)
+scale = Vector2(0.67, 0.67)
+texture = ExtResource("2_1o2ub")
+
+[node name="shoot" type="Marker2D" parent="Marker2D/Pistol"]
+unique_name_in_owner = true
+position = Vector2(94.0299, -14.9254)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.291
+autostart = true
+
+[connection signal="visibility_changed" from="Marker2D/Pistol" to="." method="_on_pistol_visibility_changed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

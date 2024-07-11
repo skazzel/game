@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgdksli63age4"]
+
+[ext_resource type="Script" path="res://shotgun.gd" id="1_66igk"]
+[ext_resource type="Texture2D" uid="uid://dg323hpukspj6" path="res://shotgun/wYVuao.png" id="2_tvot8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5ebh8"]
+
+[node name="shotgun" type="Area2D"]
+scale = Vector2(2.94, 2.94)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_66igk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5ebh8")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(41.4966, 0)
+
+[node name="WYVuao" type="Sprite2D" parent="Marker2D"]
+position = Vector2(-17.3469, -1.02041)
+scale = Vector2(0.185, 0.185)
+texture = ExtResource("2_tvot8")
+
+[node name="shoot" type="Marker2D" parent="Marker2D/WYVuao"]
+unique_name_in_owner = true
+position = Vector2(147.086, -29.4172)
+rotation = -0.140659
+
+[node name="shoot2" type="Marker2D" parent="Marker2D/WYVuao"]
+unique_name_in_owner = true
+position = Vector2(147.086, -18.3857)
+
+[node name="shoot3" type="Marker2D" parent="Marker2D/WYVuao"]
+unique_name_in_owner = true
+position = Vector2(147.086, -7.35429)
+rotation = 0.160901
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
