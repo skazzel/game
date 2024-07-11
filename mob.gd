@@ -32,3 +32,4 @@ func take_damage():
 		if snapped(random_number, 0.1) == 1:
 			drop_item()
 		queue_free()
+		GlobalSignals.enemy_killed.emit()
