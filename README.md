@@ -3,8 +3,3 @@
 Jedn� se o spole�n� projekt. Auto�i projektu jsou:
 - Petr �ervinka, p_cervinka
 - Filip V�clav�k, f_vaclavik
-
-Inspirací pro tuto hru byli jednoduché arkádové 2D střílečky, dostupné přes prohlížeč
-
-
-
