@@ -416,6 +416,25 @@ position = Vector2(1029, 27)
 scale = Vector2(1.32572, 1.30857)
 texture = ExtResource("7_va2ju")
 
+[node name="remaining_enemies_label" type="Label" parent="score"]
+offset_right = 67.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_btyxx")
+theme_override_font_sizes/font_size = 33
+
+[node name="wave_count_label" type="Label" parent="score"]
+offset_top = 45.0
+offset_right = 67.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontFile_btyxx")
+theme_override_font_sizes/font_size = 33
+
+[node name="InBetweenTimer" type="Timer" parent="."]
+wait_time = 10.0
+
 [connection signal="heathDepleted" from="player" to="." method="_on_player_heath_depleted"]
 [connection signal="visibility_changed" from="player/shotgun" to="." method="_on_shotgun_visibility_changed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="InBetweenTimer" to="." method="_on_in_between_timer_timeout"]

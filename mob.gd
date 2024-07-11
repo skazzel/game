@@ -29,6 +29,7 @@ func take_damage():
 	
 	if health == 0:
 		var random_number = randf()
-		if snapped(random_number, 0.1) < 1:
+		if snapped(random_number, 0.1) == 1:
 			drop_item()
 		queue_free()
+		GlobalSignals.enemy_killed.emit()
