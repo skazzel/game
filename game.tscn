@@ -324,10 +324,10 @@ script = ExtResource("1_67vec")
 layer = -1
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-offset_left = 3.0
-offset_top = -6.0
-offset_right = 1149.0
-offset_bottom = 642.0
+offset_left = -65.0
+offset_top = -27.0
+offset_right = 1154.0
+offset_bottom = 625.0
 
 [node name="player" parent="." instance=ExtResource("1_pii4y")]
 position = Vector2(513, 302)
@@ -365,7 +365,7 @@ position = Vector2(904, 501)
 position = Vector2(195, 113)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.414
+wait_time = 0.4
 autostart = true
 
 [node name="gameOver" type="CanvasLayer" parent="."]
