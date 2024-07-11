@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://puquxeuxjfle"]
 
-[ext_resource type="Texture2D" uid="uid://dnos1mucf0unl" path="res://tree/pine_tree.png" id="1_q2ol7"]
+[ext_resource type="Texture2D" uid="uid://cwagt701wd4pl" path="res://tree/iv8Axu.png" id="1_23umv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_axok0"]
 radius = 30.0666
@@ -9,7 +9,7 @@ radius = 30.0666
 
 [node name="PineTree" type="Sprite2D" parent="."]
 position = Vector2(-2, -1)
-texture = ExtResource("1_q2ol7")
+texture = ExtResource("1_23umv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 44)

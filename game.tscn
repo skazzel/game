@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://kil4kcytqxhw"]
+[gd_scene load_steps=14 format=3 uid="uid://kil4kcytqxhw"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_67vec"]
 [ext_resource type="PackedScene" uid="uid://befxvs4tafm0b" path="res://character.tscn" id="1_pii4y"]
@@ -316,6 +316,18 @@ cache/0/33/0/kerning_overrides/35/0 = Vector2(0, 0)
 cache/0/33/0/kerning_overrides/34/0 = Vector2(0, 0)
 cache/0/33/0/kerning_overrides/33/0 = Vector2(0, 0)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1rm74"]
+size = Vector2(2360.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_btass"]
+size = Vector2(14, 1651)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q08qo"]
+size = Vector2(18, 1651)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eet4e"]
+size = Vector2(2318, 17)
+
 [node name="game" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_67vec")
@@ -324,10 +336,11 @@ script = ExtResource("1_67vec")
 layer = -1
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
-offset_left = -65.0
-offset_top = -27.0
-offset_right = 1154.0
-offset_bottom = 625.0
+offset_left = -628.0
+offset_top = -509.0
+offset_right = 1729.0
+offset_bottom = 1167.0
+color = Color(0.141176, 0.294118, 0, 1)
 
 [node name="player" parent="." instance=ExtResource("1_pii4y")]
 position = Vector2(513, 302)
@@ -415,6 +428,24 @@ theme_override_font_sizes/font_size = 33
 position = Vector2(1029, 27)
 scale = Vector2(1.32572, 1.30857)
 texture = ExtResource("7_va2ju")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(547.75, -497)
+shape = SubResource("RectangleShape2D_1rm74")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-622, 339.5)
+shape = SubResource("RectangleShape2D_btass")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1721, 339.5)
+shape = SubResource("RectangleShape2D_q08qo")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(545, 1159.5)
+shape = SubResource("RectangleShape2D_eet4e")
 
 [connection signal="heathDepleted" from="player" to="." method="_on_player_heath_depleted"]
 [connection signal="visibility_changed" from="player/shotgun" to="." method="_on_shotgun_visibility_changed"]
